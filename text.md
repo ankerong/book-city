@@ -8,7 +8,7 @@ gulp + require + handlebars + ES6/7 + ajax + sass + flex + canvas + 懒加载
 
 项目运行
 
-    git clone git@github.com:typeofYh/6bookcity.git
+    git clone git@github.com:ankerong/book-city.git
     npm install --save-dev
     npm run build
 
