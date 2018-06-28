@@ -1,0 +1,86 @@
+<div class="swiper-container pic swiper-no-swiping">
+    <div class="swiper-wrapper">
+        {{#each data}}
+        <div class="swiper-slide">
+            <img src="{{ad_pic_url}}" alt="" title="{{ad_name}}">
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<!--死板-->
+<div class="scroll_dl">
+    <dl>
+        <dt>
+            <img src="img/1.png" alt="">
+        </dt>
+        <dd>限免</dd>
+    </dl>
+    <dl>
+        <dt>
+            <img src="img/2.png" alt="">
+        </dt>
+        <dd>女生</dd>
+    </dl>
+    <dl>
+        <dt>
+            <img src="img/3.png" alt="">
+        </dt>
+        <dd>男生</dd>
+    </dl>
+    <dl>
+        <dt>
+            <img src="img/4.png" alt="">
+        </dt>
+        <dd>分类</dd>
+    </dl>
+    <dl>
+        <dt>
+            <img src="img/5.png" alt="">
+        </dt>
+        <dd>排行</dd>
+    </dl>
+</div>
+
+<!-- 本周最火 -->
+<div class="block_list week-hot"></div>
+<div class="scroll_mast">
+    <p>查看更多</p>
+</div>
+<!-- 重磅推荐 -->
+<div class="recommend_list">
+    <div class="recommend_cont"></div>
+    <div class="import_ol">
+        <button class="change_btn" data-id="0" data="2">换一换</button><button>查看全部</button>
+    </div>
+</div>
+<!-- 女生最爱 -->
+<div class="gril_love dl-list">
+    <h2>女生最爱</h2>
+    <div class="gril-cont"></div>
+    <div class="import_ol">
+        <button class="change_btn" data-id="0" data="3">换一换</button><button>女生频道</button>
+    </div>
+</div>
+<!-- 男生最爱 -->
+<div class="boy_love dl-list">
+    <h2>男生最爱</h2>
+    <div class="boy-cont"></div>
+    <div class="import_ol">
+        <button class="change_btn" data-id="0" data="4">换一换</button><button>男生频道</button>
+    </div>
+</div>
+<!-- 限时抢购 -->
+<div class="block_list time-free"></div>
+<!--精选专题-->
+<div class="sift_list">
+    <div class="import_one">
+        <p>精选专题<span>热</span></p>
+    </div>
+    <div class="shif-cont"></div>
+</div>
+<!--上拉加载-->
+<div class="load-cont">
+    <div class="load-list"></div>
+    <p class="loading">加载更多</p>
+</div>

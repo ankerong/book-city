@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+    <script src="js/lib/require.js"></script>
+    <script>
+        require(['js/main'], function() {
+            require(['index']);
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <div class="nav_left">
+                    <img src="img/qian.png" alt="">
+                </div>
+                <div class="nav_middle">
+                    <span class="active">书城</span><span>书架</span>
+                </div>
+                <div class="nav_right">
+                    <a href="page/login.html"><img src="img/ren.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <div class="scroll">
+                    <div class="box">
+                        <!-- 书城 -->
+                        <div class="scroll_inp">
+                            <div class="inp_both">
+                                <div class="inp">
+                                    <img src="img/sou.png" alt="">
+                                    <a href="page/search.html"><input type="text" placeholder="输入书名/作者/关键字"></a>
+                                </div>
+                            </div>
+                            <div class="scroll_banner">
+                            </div>
+                        </div>
+                        <!-- 书架 -->
+                        <div class="scroll_riginp">
+                            <div class="right_inp">
+                                <div class="inp_si">
+                                    <img src="img/sou.png" alt="">
+                                    <input type="text" placeholder="输入书名/作者/关键字">
+                                </div>
+                                <img src="img/si.png" alt="" class="toggle">
+                            </div>
+                            <div class="book-self-cont">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/x-handlebars-template" class="text">
+        {{#each data.data}}
+        <a href="javascript:;"><img src="{{ad_pic_url}}"></a>
+        {{/each}}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<div class="detail_dl">
+    <dl>
+        <dt>
+        <img src="{{item.cover}}" alt="">
+        </dt>
+        <dd>
+            <h3>{{item.title}}</h3>
+            <p class="detail_one">{{item.authors}}</p>
+            <p class="detail_two">{{item.rights_id}}个评价</p>
+            <p class="detail_three">价格: {{item.price}}书币/千字</p>
+            <p class="detail_four">字数: {{#wordcount item.word_count}}{{/wordcount}}万字<span>{{#finish item.finish}}{{/finish}}</span></p>
+        </dd>
+    </dl>
+    <div>
+        <div class="detail_btn">
+            <a href="text.html?id={{item.source_id}}&chaptersum={{item.chapter_count}}" class="active"><span>开始阅读</span></a>
+            <a href="javascript:"><span>下载</span></a>
+        </div>
+        <div class="detail_size">
+            <p>{{item.content}}</p>
+        </div>
+        <div class="detail_new">
+            <p onclick="location.href = '/page/menu.html?id={{item.source_id}}&active={{item.latest_id}}'">最新:{{item.latest}}更新于{{#updatedTime item.updated}}{{/updatedTime}}</p>
+        </div>
+        <div class="detail_tack">
+            <h3>类别标签</h3>
+            <ul>
+                {{#each item.tags}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="detail_book">
+            {{#each author_books}}
+            <p>作者其它图书</p>
+            <p class="book_img"><img src="{{cover}}" alt=""></p>
+            <p>{{title}}</p>
+            <p>审判官</p>
+            {{/each}}
+        </div>
+        <div class="detail_end">
+            <p>图书信息</p>
+            <p>版权: 阅文集团旗下起点中文网</p>
+        </div></div></div>

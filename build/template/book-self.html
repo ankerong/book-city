@@ -1,0 +1,34 @@
+<div class="book-cont">
+    <div class="scroll_hot">
+        {{#each data.data}}
+        <a href="page/detail.html?id={{fiction_id}}">
+            <dl>
+                <dt>
+                            <img src="{{cover}}" alt="">
+                        </dt>
+                <dd>{{title}}</dd>
+            </dl>
+        </a>
+        {{/each}}
+    </div>
+</div>
+<!-- 切换的 -->
+<div class="book-show">
+    <div class="import_dl">
+        {{#each data.data}}
+        <dl>
+            <dt>
+                <img src="{{cover}}" alt=""><em>{{#finish finish}}{{/finish}}</em>
+            </dt>
+            <dd>
+                <h3>{{title}}</h3>
+                <p>{{authors}}</p>
+                <p>{{summary}}</p>
+                <h2>
+                    {{#each tags}}<span>{{this}}</span> {{/each}}
+                </h2>
+            </dd>
+        </dl>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <script src="../js/lib/require.js"></script>
+    <script>
+        require(['../js/main'], function() {
+            require(['login'])
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">
+            <p><img src="../img/mi.png" alt=""></p>
+            <p>小米账号登录</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="邮箱/手机号/小米ID" class="user">
+            <input type="password" placeholder="密码" class="pwd">
+            <span class="eye"><i class="icon iconfont icon-eyeopen"></i></span>
+            <button type="button" class="login">登录</button>
+            <button type="button" class="reglogin">手机短信登录/注册</button>
+        </div>
+        <p class="cot" style="color:red;"></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<div class="scroll_size">
+    <b></b><span>{{ad_name}}</span>
+</div>
+
+<div class="scroll_hot">
+    {{#each data.data}}
+    <a href="page/detail.html?id={{fiction_id}}">
+        <dl>
+            <dt>
+                <img src="{{cover}}" alt="">
+            </dt>
+            <dd>{{title}}</dd>
+        </dl>
+    </a>
+    {{/each}}
+</div>
